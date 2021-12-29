@@ -26,7 +26,7 @@ If you need to build your own image with different terraform or terragrunt versi
 ```
 git clone https://github.com/gcavalcante8808/golang-terraform-devtools.git
 cd golang-terraform-devtools
-docker build --build-arg TERRAFORM_VERSION=<SOME_TF_VERSION> TERRAGRUNT_VERSION=<SOME_TG_VERSION> . -t my-own-image
+docker build --build-arg TERRAFORM_VERSION=<SOME_TF_VERSION> --build-arg TERRAGRUNT_VERSION=<SOME_TG_VERSION> . -t my-own-image
 ```
 
 Author
